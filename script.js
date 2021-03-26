@@ -1,9 +1,7 @@
 let darkModeBtn = document.getElementById('darkModeBtn');
+let input = document.getElementById('password');
 
-darkModeBtn.addEventListener('mouseover',function(){
-    document.body.style.background = "#ff0"; //press
-})
-
-darkModeBtn.addEventListener('mouseleave',function(){
-    document.body.style.background = "#444"; //release
+darkModeBtn.addEventListener('click',function(e){
+    input.type == "password" ? input.type = "text"
+                : input.type = "password";
 })
