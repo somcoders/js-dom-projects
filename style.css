@@ -1,0 +1,18 @@
+.normal {
+  background-color: #ddd;
+}
+.darkMode {
+  background-color: #555;
+  color: white;
+}
+
+.darkMode h2 {
+  color: orange;
+}
+button {
+  float: right;
+}
+.darkMode,
+.normal {
+  transition-duration: 0.7s;
+}

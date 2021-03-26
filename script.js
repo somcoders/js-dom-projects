@@ -1,9 +1,8 @@
 let darkModeBtn = document.getElementById('darkModeBtn');
+let body = document.body;
 
-darkModeBtn.addEventListener('mouseover',function(){
-    document.body.style.background = "#ff0"; //press
-})
-
-darkModeBtn.addEventListener('mouseleave',function(){
-    document.body.style.background = "#444"; //release
+darkModeBtn.addEventListener('click',function(event){
+    body.className == "normal" ? 
+        body.className = "darkMode" : body.className  = "normal";
+    event.target.innerHTML = "White";
 })
