@@ -1,10 +1,9 @@
-let container   = document.querySelector(".container");
+let darkModeBtn = document.getElementById('darkModeBtn');
 
-let subBtn  =   document.createElement("button");
-    subBtn.innerHTML       = "Nala Soco";
-    subBtn.style.background = "orange";
-    subBtn.id =  "subBtn";
+darkModeBtn.addEventListener('mouseover',function(){
+    document.body.style.background = "#ff0"; //press
+})
 
-    container.appendChild(subBtn);
-
-    // container.removeChild(subBtn);
+darkModeBtn.addEventListener('mouseleave',function(){
+    document.body.style.background = "#444"; //release
+})
