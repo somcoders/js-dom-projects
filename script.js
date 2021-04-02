@@ -1,13 +1,13 @@
-let passToggler     =   document.querySelector("#passwordToggler");
-let passInput       =   document.querySelector("#password");
+let passToggler = document.querySelector("#passToggler");
+let inputPass   = document.querySelector("#password");
+
+    function showPass(){
+     inputPass.type = "text";
+    }
+    function hidePass(){
+     inputPass.type = "password";
+    }
 
 
-function showPassword() {
-   passInput.type = "text";
-}
-function hidePassword() {
-    passInput.type = "password";
-}
-
-passToggler.addEventListener("mousedown",showPassword);
-passToggler.addEventListener("mouseup",hidePassword);
+    passToggler.addEventListener("mousedown",showPass);
+    passToggler.addEventListener("mouseup",hidePass);
