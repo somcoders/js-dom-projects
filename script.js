@@ -1,7 +1,13 @@
-let darkModeBtn = document.getElementById('darkModeBtn');
-let input = document.getElementById('password');
+let passToggler     =   document.querySelector("#passwordToggler");
+let passInput       =   document.querySelector("#password");
 
-darkModeBtn.addEventListener('click',function(e){
-    input.type == "password" ? input.type = "text"
-                : input.type = "password";
-})
+
+function showPassword() {
+   passInput.type = "text";
+}
+function hidePassword() {
+    passInput.type = "password";
+}
+
+passToggler.addEventListener("mousedown",showPassword);
+passToggler.addEventListener("mouseup",hidePassword);
