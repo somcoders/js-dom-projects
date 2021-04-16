@@ -1,13 +1,13 @@
-let passToggler = document.querySelector("#passToggler");
-let inputPass   = document.querySelector("#password");
-
-    function showPass(){
-     inputPass.type = "text";
-    }
-    function hidePass(){
-     inputPass.type = "password";
-    }
+let darkMode = document.querySelector("#darkMode");
 
 
-    passToggler.addEventListener("mousedown",showPass);
-    passToggler.addEventListener("mouseup",hidePass);
+function changeMode(){
+    let body    =   document.body;
+   body.classList.toggle("darkMode");
+   body.classList.contains("darkMode") 
+                    ?   darkMode.innerHTML = "🌙"
+                    :  darkMode.innerHTML = "🌚"
+
+}
+
+darkMode.addEventListener("click",changeMode);

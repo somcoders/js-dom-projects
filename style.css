@@ -1,0 +1,17 @@
+.normalMode {
+  background: #eee;
+}
+
+.darkMode {
+  background: black;
+  color: white;
+}
+
+.darkMode h3 {
+  color: orange;
+}
+
+.darkMode,
+.normalMode {
+  transition-duration: 0.7s;
+}
