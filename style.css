@@ -1,17 +1,21 @@
-.normalMode {
-  background: #eee;
+body {
+  margin: 0 auto;
+  width: 500px;
+  background-color: #ddd;
+  font-family: tahoma;
 }
-
-.darkMode {
-  background: black;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+textarea,
+button {
+  margin: 10px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+button {
+  background: #55acce;
   color: white;
-}
-
-.darkMode h3 {
-  color: orange;
-}
-
-.darkMode,
-.normalMode {
-  transition-duration: 0.7s;
 }
