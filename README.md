@@ -1,0 +1,1 @@
+Waa tusaaleha cashar-ka JavaScript Document Object Model.
